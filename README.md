@@ -35,6 +35,9 @@ You enter a startup name, industry, and description. The app analyzes it and giv
 ---
 
 ## Folder structure
+## 📂 Project Structure
+
+```text
 startup-validator/
 │
 ├── backend/
@@ -49,13 +52,8 @@ startup-validator/
 │   │   ├── auth.js
 │   │   └── ideas.js
 │   │
-│   ├── node_modules/          ← auto-generated, do not touch
-│   │
-│   ├── .env                   ← your secrets, never upload
-│   ├── jsconfig.json
-│   ├── package.json
-│   ├── package-lock.json
-│   └── server.js
+│   ├── server.js
+│   └── .env
 │
 ├── frontend/
 │   ├── css/
@@ -76,7 +74,7 @@ startup-validator/
 │
 ├── .gitignore
 └── README.md
-
+```
 ## How to run it locally
 
 **1. Clone the repo**
