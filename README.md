@@ -36,26 +36,46 @@ You enter a startup name, industry, and description. The app analyzes it and giv
 
 ## Folder structure
 startup-validator/
+│
 ├── backend/
-│   ├── middleware/auth.js      # protects routes with JWT
-│   ├── models/User.js          # user schema
-│   ├── models/Idea.js          # idea + analysis schema
-│   ├── routes/auth.js          # register, login
-│   ├── routes/ideas.js         # create, read, delete ideas + analysis engine
-│   ├── server.js               # entry point
-│   └── .env                    # secrets — never upload this
-└── frontend/
-├── css/style.css
-├── js/api.js
-├── pages/
-│   ├── register.html
-│   ├── login.html
-│   ├── dashboard.html
-│   ├── validate.html
-│   ├── result.html
-│   └── ideas.html
-└── index.html
-
+│   ├── middleware/
+│   │   └── auth.js
+│   │
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Idea.js
+│   │
+│   ├── routes/
+│   │   ├── auth.js
+│   │   └── ideas.js
+│   │
+│   ├── node_modules/          ← auto-generated, do not touch
+│   │
+│   ├── .env                   ← your secrets, never upload
+│   ├── jsconfig.json
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+│
+├── frontend/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   └── api.js
+│   │
+│   ├── pages/
+│   │   ├── register.html
+│   │   ├── login.html
+│   │   ├── dashboard.html
+│   │   ├── validate.html
+│   │   ├── result.html
+│   │   └── ideas.html
+│   │
+│   └── index.html
+│
+├── .gitignore
+└── README.md
 
 ## How to run it locally
 
